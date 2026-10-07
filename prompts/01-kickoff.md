@@ -20,7 +20,7 @@ AGENTS.md와 docs/GDD.md를 먼저 읽어.
    ⚠️ 레퍼런스 게임의 캐릭터·에셋을 모방하지 말 것 — 화풍만 참고, 디자인은 오리지널.
    에셋 프롬프트는 assets/_prompts/에 텍스트로 보관.
 
-구현 범위 (GDD의 "수직 슬라이스 범위"만 — 스테이지 1 '올림포스의 변방' 테마):
+구현 범위 (GDD의 "수직 슬라이스 범위"만 — 1~10라운드 '올림포스의 변방/아레스' 구간 테마):
 - scenes/main.tscn: Main 씬, 게임 상태 머신 (TITLE → PLAYING → GAME_OVER)
 - scripts/player.gd: CharacterBody2D 기반 상하좌우 이동 + 탭 대시(쿨타임 3초)
 - scripts/spawner.gd: 먹이/포식자 스폰, 난이도 곡선 (고도에 따라 속도·밀도 증가)
