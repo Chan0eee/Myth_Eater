@@ -1,0 +1,15 @@
+# .godot/ — Godot 에디터 캐시 (git 무시)
+.godot/
+
+# 임포트 캐시
+*.import
+
+# Godot 4 export
+exports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 에디터 백업
+*.bak
