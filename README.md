@@ -1,7 +1,8 @@
-# Alien Bites (working title)
+# Myth Eater (가제: 신화를 삼키는 자)
 
-배고픈 외계인이 되어 질주하며 먹이를 삼키고 성장하는 모바일 횡스크롤 아케이드.
-Godot 4 + Antigravity(agy) 개발. 레퍼런스: 외계인은 배고파 (Hungry Aliens).
+신들에게 계략에 빠져 힘을 잃은 '공허의 포식자'가 신화 속 존재들을 삼키며 힘을 되찾고,
+약한 신부터 강한 신까지 판테온을 정복해 올라가는 모바일 종스크롤 아케이드.
+Godot 4 + Antigravity(agy) 개발. 레퍼런스: 외계인은 배고파 (Hungry Aliens, 화풍만 참고).
 
 ## 시작하기
 1. Godot 4.3+ 설치 후 이 폴더를 프로젝트로 열기

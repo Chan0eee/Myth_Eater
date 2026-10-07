@@ -20,13 +20,14 @@ AGENTS.md와 docs/GDD.md를 먼저 읽어.
    ⚠️ 레퍼런스 게임의 캐릭터·에셋을 모방하지 말 것 — 화풍만 참고, 디자인은 오리지널.
    에셋 프롬프트는 assets/_prompts/에 텍스트로 보관.
 
-구현 범위 (GDD의 "수직 슬라이스 범위"만):
+구현 범위 (GDD의 "수직 슬라이스 범위"만 — 스테이지 1 '올림포스의 변방' 테마):
 - scenes/main.tscn: Main 씬, 게임 상태 머신 (TITLE → PLAYING → GAME_OVER)
 - scripts/player.gd: CharacterBody2D 기반 상하좌우 이동 + 탭 대시(쿨타임 3초)
 - scripts/spawner.gd: 먹이/포식자 스폰, 난이도 곡선 (고도에 따라 속도·밀도 증가)
 - scripts/prey.gd, scripts/predator.gd: 먹이 지그재그 이동, 포식자 추적 AI
 - scripts/hud.gd: 점수/레벨/배고픔 게이지, 게임 오버 화면
 - scripts/balance.gd: Autoload, 모든 튜닝 수치 (속도, 스폰율, 성장치, 게이지 감소율)
+- 먹이/적 비주얼은 스테이지 1 테마 (하피, 사티로스, 키클롭스)로. 보스전은 페이즈 2라 이번에 만들지 말 것.
 
 제약:
 - Godot 4.3, gl_compatibility, 세로 화면(portrait 720x1280), 모바일 터치 우선 (마우스 에뮬레이션은 테스트용)
