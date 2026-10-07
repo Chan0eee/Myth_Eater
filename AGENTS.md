@@ -6,7 +6,8 @@
 ## 제1조 — 스킬 우선 로딩
 1. 작업 시작 전 `.agent/skills/router/SKILL.md`를 읽고 라우팅을 따른다.
 2. 엔진 스킬(`godot/`), 장르 스킬(`genres/platformer`, `genres/roguelike`)을 먼저 로드하고, 분야 스킬을 덧붙인다.
-3. UI 작업 전 `frontend-design/SKILL.md`를, 스프라이트 작업 전 `pixel-art-sprites/SKILL.md` + `art-consistency/SKILL.md`를 반드시 읽는다.
+3. UI 작업 전 `frontend-design/SKILL.md`를, 캐릭터/스프라이트 작업 전
+   `character-design/SKILL.md` + `art-consistency/SKILL.md` + `concept-art/SKILL.md`를 반드시 읽는다.
    (에이전트는 스킬을 몰라도 질문하지 말고 파일에서 직접 읽는다.)
 
 ## 제2조 — Godot 4 컨벤션
