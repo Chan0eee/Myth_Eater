@@ -1,0 +1,4 @@
+# Environment Prompt — Ares' Outskirts / Olympus Frontier (올림포스의 변방)
+# Theme: Volcanic Tartarus border meeting the foot of Mount Olympus.
+# Colors: Obsidian black (#0b0914), molten magma fissures (#e63946, #f77f00), broken marble columns (#d8d5db), ember flecks (#fcbf49).
+# Mood: Epic mythological ascension, rising from dark underworld into glowing dawn sky.

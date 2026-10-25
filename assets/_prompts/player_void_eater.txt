@@ -1,0 +1,16 @@
+# Character Design Prompt — Void Eater (공허의 포식자)
+# Style: Bold cartoon chibi style (thick clean outlines 4-6px, cel shading, high saturation, 2-head-tall chibi proportions, glossy spherical highlights, vector clean finish)
+# Subject: Original mythological cosmic void devourer — banished ancient void entity climbing back up Tartarus towards Mount Olympus.
+
+[Stage 1: 심연의 새끼 (Void Hatchling)]
+- Appearance: Round blobby cosmic void hatchling, deep midnight violet body (#2a134e) with vibrant cyan/turquoise bioluminescent spots and glossy specular shine.
+- Face: Oversized cute chibi glowing yellow-gold eyes with starry pupils, small toothy mouth with tiny fangs, small purple horns curving backward.
+- Silhouette: Compact round teardrop silhouette with two small floating cosmic fin-wings.
+
+[Stage 2: 포식자 (Void Stalker)]
+- Appearance: Sleeker, slightly larger predatory form. Cosmic dark nebula body with sharper horns, glowing turquoise etheric wing-fins, wider maw showing jagged crystalline teeth.
+- Accent: Faint purple void aura and golden celestial crack patterns across the back.
+
+[Stage 3: 신화급 거대체 (Myth Devourer)]
+- Appearance: Massive intimidating yet charming chibi cosmic behemoth. Triple horns with golden Olympian bindings shattered and floating, four glowing eyes, gaping toothy cosmic maw with vortex swirl inside, fierce flared void wings.
+- Palette: Dark purple (#180b2b), Neon Cyan (#00e5ff), Celestial Gold (#ffd700), Crimson Void Core (#ff2a6d).

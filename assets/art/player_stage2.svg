@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <radialGradient id="bodyGrad2" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#5a189a"/>
+      <stop offset="50%" stop-color="#240046"/>
+      <stop offset="100%" stop-color="#10002b"/>
+    </radialGradient>
+    <linearGradient id="hornGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f"/>
+      <stop offset="50%" stop-color="#7b2cbf"/>
+      <stop offset="100%" stop-color="#00f5d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wing-fins (Sharper, layered) -->
+  <path d="M 28 85 C 4 72 8 46 32 60 C 16 48 24 36 40 50 Z" fill="#00f5d4" stroke="#10002b" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M 132 85 C 156 72 152 46 128 60 C 144 48 136 36 120 50 Z" fill="#00f5d4" stroke="#10002b" stroke-width="4.5" stroke-linejoin="round"/>
+
+  <!-- Back Horns -->
+  <path d="M 44 48 C 30 18 12 24 24 6 C 42 16 54 32 52 50 Z" fill="url(#hornGrad2)" stroke="#10002b" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M 116 48 C 130 18 148 24 136 6 C 118 16 106 32 108 50 Z" fill="url(#hornGrad2)" stroke="#10002b" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Center Horn -->
+  <path d="M 74 38 C 72 16 80 8 80 8 C 80 8 88 16 86 38 Z" fill="#ffd166" stroke="#10002b" stroke-width="4.5" stroke-linejoin="round"/>
+
+  <!-- Main Body -->
+  <ellipse cx="80" cy="85" rx="54" ry="50" fill="url(#bodyGrad2)" stroke="#10002b" stroke-width="5.5"/>
+
+  <!-- Cel Shading Shadow -->
+  <path d="M 32 98 C 42 128 118 128 128 98 C 120 134 40 134 32 98 Z" fill="#080014" opacity="0.65"/>
+
+  <!-- Glossy Highlight -->
+  <ellipse cx="58" cy="58" rx="18" ry="8" transform="rotate(-25 58 58)" fill="#ffffff" opacity="0.6"/>
+  <circle cx="42" cy="66" r="3.5" fill="#ffffff" opacity="0.75"/>
+
+  <!-- Celestial Gold Crack Marks -->
+  <path d="M 72 48 L 78 62 L 74 72 L 84 80" stroke="#ffd166" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="68" cy="116" r="4" fill="#00f5d4"/>
+  <circle cx="92" cy="116" r="4" fill="#00f5d4"/>
+
+  <!-- Eyes (Fiercer Chibi) -->
+  <polygon points="34,70 60,66 58,86 36,82" fill="#ffbe0b" stroke="#10002b" stroke-width="4.5" stroke-linejoin="round"/>
+  <polygon points="40,73 54,71 52,83 39,81" fill="#10002b"/>
+  <circle cx="46" cy="74" r="3.5" fill="#ffffff"/>
+
+  <polygon points="126,70 100,66 102,86 124,82" fill="#ffbe0b" stroke="#10002b" stroke-width="4.5" stroke-linejoin="round"/>
+  <polygon points="120,73 106,71 108,83 121,81" fill="#10002b"/>
+  <circle cx="114" cy="74" r="3.5" fill="#ffffff"/>
+
+  <!-- Predatory Maw -->
+  <path d="M 60 98 Q 80 120 100 98 Q 80 106 60 98 Z" fill="#e63946" stroke="#10002b" stroke-width="4.5" stroke-linejoin="round"/>
+  <!-- Sharp Teeth -->
+  <polygon points="66,100 70,108 74,101" fill="#ffffff"/>
+  <polygon points="76,101 80,110 84,101" fill="#ffffff"/>
+  <polygon points="86,101 90,108 94,100" fill="#ffffff"/>
+  <polygon points="72,112 76,106 80,113" fill="#ffffff"/>
+  <polygon points="80,113 84,106 88,112" fill="#ffffff"/>
+</svg>

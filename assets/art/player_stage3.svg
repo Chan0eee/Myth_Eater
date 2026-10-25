@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bodyGrad3" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7209b7"/>
+      <stop offset="40%" stop-color="#3a0ca3"/>
+      <stop offset="85%" stop-color="#12002b"/>
+      <stop offset="100%" stop-color="#050014"/>
+    </radialGradient>
+    <linearGradient id="goldHalo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe66d"/>
+      <stop offset="100%" stop-color="#e76f51"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shattered God Ring / Halo behind head -->
+  <ellipse cx="100" cy="56" rx="58" ry="24" fill="none" stroke="url(#goldHalo)" stroke-width="6" stroke-dasharray="24 10 36 12"/>
+
+  <!-- Vast Cosmic Wings -->
+  <path d="M 36 100 C -10 80 -4 44 26 56 C 8 40 20 22 46 44 C 36 28 52 18 70 38 Z" fill="#00f5d4" stroke="#050014" stroke-width="5.5" stroke-linejoin="round"/>
+  <path d="M 164 100 C 210 80 204 44 174 56 C 192 40 180 22 154 44 C 164 28 148 18 130 38 Z" fill="#00f5d4" stroke="#050014" stroke-width="5.5" stroke-linejoin="round"/>
+
+  <!-- Massive Curved Horns -->
+  <path d="M 52 56 C 30 16 6 22 18 0 C 44 14 62 36 60 62 Z" fill="#ff007f" stroke="#050014" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M 148 56 C 170 16 194 22 182 0 C 156 14 138 36 140 62 Z" fill="#ff007f" stroke="#050014" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M 94 40 C 92 12 100 2 100 2 C 100 2 108 12 106 40 Z" fill="#ffe66d" stroke="#050014" stroke-width="5.5" stroke-linejoin="round"/>
+
+  <!-- Colossal Void Body -->
+  <ellipse cx="100" cy="106" rx="68" ry="64" fill="url(#bodyGrad3)" stroke="#050014" stroke-width="6.5"/>
+
+  <!-- Underbelly Shading -->
+  <path d="M 40 120 C 52 162 148 162 160 120 C 150 170 50 170 40 120 Z" fill="#020008" opacity="0.75"/>
+
+  <!-- Glossy Highlight -->
+  <ellipse cx="72" cy="74" rx="22" ry="10" transform="rotate(-25 72 74)" fill="#ffffff" opacity="0.65"/>
+  <circle cx="54" cy="84" r="4" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Four Glowing Cosmic Eyes -->
+  <!-- Upper Left -->
+  <ellipse cx="64" cy="80" rx="10" ry="12" fill="#ffd166" stroke="#050014" stroke-width="4.5"/>
+  <circle cx="64" cy="80" r="5" fill="#050014"/>
+  <circle cx="62" cy="78" r="2.5" fill="#ffffff"/>
+  <!-- Upper Right -->
+  <ellipse cx="136" cy="80" rx="10" ry="12" fill="#ffd166" stroke="#050014" stroke-width="4.5"/>
+  <circle cx="136" cy="80" r="5" fill="#050014"/>
+  <circle cx="134" cy="78" r="2.5" fill="#ffffff"/>
+  <!-- Lower Main Left -->
+  <polygon points="68,96 90,92 88,110 70,108" fill="#ff0054" stroke="#050014" stroke-width="5"/>
+  <circle cx="79" cy="101" r="3.5" fill="#ffffff"/>
+  <!-- Lower Main Right -->
+  <polygon points="132,96 110,92 112,110 130,108" fill="#ff0054" stroke="#050014" stroke-width="5"/>
+  <circle cx="121" cy="101" r="3.5" fill="#ffffff"/>
+
+  <!-- Myth-Devouring Black Hole Maw -->
+  <ellipse cx="100" cy="128" rx="34" ry="22" fill="#180018" stroke="#050014" stroke-width="6"/>
+  <!-- Cosmic Swirl inside mouth -->
+  <circle cx="100" cy="128" r="12" fill="#ff007f" opacity="0.5"/>
+  <circle cx="100" cy="128" r="6" fill="#00f5d4"/>
+  <!-- Huge Fangs -->
+  <polygon points="76,118 82,130 88,119" fill="#ffffff"/>
+  <polygon points="90,117 96,132 102,117" fill="#ffffff"/>
+  <polygon points="104,117 110,132 116,117" fill="#ffffff"/>
+  <polygon points="118,119 124,130 130,118" fill="#ffffff"/>
+
+  <polygon points="84,138 90,126 96,139" fill="#ffffff"/>
+  <polygon points="104,139 110,126 116,138" fill="#ffffff"/>
+</svg>

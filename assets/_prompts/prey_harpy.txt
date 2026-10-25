@@ -1,0 +1,8 @@
+# Prey Design Prompt — Harpy Chick (아레스의 전령 하피)
+# Style: Bold cartoon chibi style, thick outlines (4px), cel shading, 2-step lighting, high saturation.
+# Subject: Cute mythological Harpy chick serving Ares' frontline.
+
+- Concept: Baby feathered harpy raptor bird-spirit.
+- Colors: Warm golden amber feathers (#ffb703), fiery vermilion wing tips (#e63946), pale ivory underbelly, golden sharp beak.
+- Silhouette: Oval winged silhouette with fluffy head tufts resembling a warrior helmet crest.
+- Animation cue: Flaps wings rapidly in a zigzag swooping pattern.

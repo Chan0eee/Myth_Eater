@@ -1,0 +1,8 @@
+# Prey Design Prompt — Satyr Youth (황야의 사티로스)
+# Style: Bold cartoon chibi style, thick dark outlines, cel shading, high saturation, glossy highlights.
+# Subject: Playful young Satyr frolicking near Ares' war grounds.
+
+- Concept: Chibi goat-horned faun holding a miniature pan flute.
+- Colors: Emerald & moss green leafy tunic (#2a9d8f), warm fawn-brown fur (#a2673a), curved chestnut horns (#5c3d2e), rosy cheeks.
+- Silhouette: Bouncy pear-shaped silhouette with curly fleece and spiral ram horns.
+- Movement: Playful bouncy swaying leaps across the screen.

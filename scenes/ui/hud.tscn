@@ -1,0 +1,387 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_hud"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.094, 0.067, 0.141, 0.85)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.247, 0.169, 0.357, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hunger_bg"]
+bg_color = Color(0.05, 0.02, 0.08, 0.9)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hunger_fill"]
+bg_color = Color(0.96, 0.65, 0.14, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_normal"]
+bg_color = Color(0.839, 0.204, 0.157, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 4
+border_color = Color(0.961, 0.702, 0.231, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dash_btn"]
+bg_color = Color(0.125, 0.078, 0.212, 0.9)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0.961, 0.831, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="InGameUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopBar" type="PanelContainer" parent="InGameUI"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 24.0
+offset_right = -20.0
+offset_bottom = 104.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="InGameUI/TopBar"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 10
+
+[node name="HBox" type="HBoxContainer" parent="InGameUI/TopBar/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ScoreContainer" type="VBoxContainer" parent="InGameUI/TopBar/Margin/HBox"]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+
+[node name="Title" type="Label" parent="InGameUI/TopBar/Margin/HBox/ScoreContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 14
+text = "DEVOUR SCORE"
+
+[node name="ScoreLabel" type="Label" parent="InGameUI/TopBar/Margin/HBox/ScoreContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.933, 0.867, 1)
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="HungerContainer" type="VBoxContainer" parent="InGameUI/TopBar/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxHungerHead" type="HBoxContainer" parent="InGameUI/TopBar/Margin/HBox/HungerContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="InGameUI/TopBar/Margin/HBox/HungerContainer/HBoxHungerHead"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 14
+text = "HUNGER"
+
+[node name="HungerLabel" type="Label" parent="InGameUI/TopBar/Margin/HBox/HungerContainer/HBoxHungerHead"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.961, 0.702, 0.231, 1)
+theme_override_font_sizes/font_size = 14
+text = "100 / 100"
+
+[node name="HungerBar" type="ProgressBar" parent="InGameUI/TopBar/Margin/HBox/HungerContainer"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_hunger_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hunger_fill")
+value = 100.0
+show_percentage = false
+
+[node name="StageContainer" type="VBoxContainer" parent="InGameUI/TopBar/Margin/HBox"]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+alignment = 2
+
+[node name="Title" type="Label" parent="InGameUI/TopBar/Margin/HBox/StageContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 14
+text = "GROWTH"
+horizontal_alignment = 2
+
+[node name="StageBadgeLabel" type="Label" parent="InGameUI/TopBar/Margin/HBox/StageContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.961, 0.831, 1)
+theme_override_font_sizes/font_size = 22
+text = "STAGE I"
+horizontal_alignment = 2
+
+[node name="DashButton" type="Button" parent="InGameUI"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -180.0
+offset_right = -40.0
+offset_bottom = -60.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dash_btn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dash_btn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dash_btn")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_dash_btn")
+
+[node name="CooldownOverlay" type="ColorRect" parent="InGameUI/DashButton"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="VBox" type="VBoxContainer" parent="InGameUI/DashButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="InGameUI/DashButton/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.961, 0.831, 1)
+theme_override_font_sizes/font_size = 18
+text = "DASH"
+horizontal_alignment = 1
+
+[node name="CooldownLabel" type="Label" parent="InGameUI/DashButton/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.85)
+theme_override_font_sizes/font_size = 15
+text = "READY"
+horizontal_alignment = 1
+
+[node name="TitleScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="TitleScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.047, 0.024, 0.082, 0.85)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TitleScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -260.0
+offset_right = 280.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="SubtitleTop" type="Label" parent="TitleScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.961, 0.702, 0.231, 1)
+theme_override_font_sizes/font_size = 18
+text = "STAGE 1 • ARES FRONTIER"
+horizontal_alignment = 1
+
+[node name="Title" type="Label" parent="TitleScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.9, 1)
+theme_override_font_sizes/font_size = 56
+text = "MYTH EATER"
+horizontal_alignment = 1
+
+[node name="KoreanTitle" type="Label" parent="TitleScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 22
+text = "신화를 삼키는 자"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="TitleScreen/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="TitleScreen/VBoxContainer"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.98, 0.9, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn_normal")
+text = "DEVOUR THE HEAVENS"
+
+[node name="Guide" type="Label" parent="TitleScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 16
+text = "Drag to Move • Tap or Space to Dash"
+horizontal_alignment = 1
+
+[node name="GameOverScreen" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.015, 0.025, 0.9)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameOverScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.0
+offset_top = -220.0
+offset_right = 260.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Title" type="Label" parent="GameOverScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.961, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 46
+text = "FALLEN TO OLYMPUS"
+horizontal_alignment = 1
+
+[node name="Sub" type="Label" parent="GameOverScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 18
+text = "심연으로의 추락"
+horizontal_alignment = 1
+
+[node name="StatsBox" type="PanelContainer" parent="GameOverScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="GameOverScreen/VBoxContainer/StatsBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="GameOverScreen/VBoxContainer/StatsBox/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="HBoxScore" type="HBoxContainer" parent="GameOverScreen/VBoxContainer/StatsBox/Margin/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GameOverScreen/VBoxContainer/StatsBox/Margin/VBox/HBoxScore"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 18
+text = "Final Score:"
+
+[node name="FinalScoreLabel" type="Label" parent="GameOverScreen/VBoxContainer/StatsBox/Margin/VBox/HBoxScore"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.961, 0.702, 0.231, 1)
+theme_override_font_sizes/font_size = 22
+text = "0"
+
+[node name="HBoxStage" type="HBoxContainer" parent="GameOverScreen/VBoxContainer/StatsBox/Margin/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GameOverScreen/VBoxContainer/StatsBox/Margin/VBox/HBoxStage"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.624, 0.573, 0.702, 1)
+theme_override_font_sizes/font_size = 18
+text = "Growth Stage:"
+
+[node name="FinalStageLabel" type="Label" parent="GameOverScreen/VBoxContainer/StatsBox/Margin/VBox/HBoxStage"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.961, 0.831, 1)
+theme_override_font_sizes/font_size = 20
+text = "STAGE I"
+
+[node name="RestartButton" type="Button" parent="GameOverScreen/VBoxContainer"]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.98, 0.9, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn_normal")
+text = "RISE AGAIN"
+
+[node name="DamageVignette" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.9, 0.05, 0.1, 1)

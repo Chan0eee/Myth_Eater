@@ -1,0 +1,8 @@
+# Predator Design Prompt — Abyssal Watchdog (심연의 파수견)
+# Style: Bold cartoon chibi style, thick dark outlines (5px), chunky proportions, cel shading, glossy highlights.
+# Subject: Ferocious yet appealing mythical abyssal guard hound prowling Ares' war grounds.
+
+- Concept: Heavy chibi nether hound / Tartarean guard beast with spiked iron collar and broken celestial chains.
+- Colors: Obsidian dark-slate fur (#1a1528), flaming crimson/magma mane and tail tips (#ff0054, #ff5400), glowing molten ruby eyes (#ff0033), tarnished bronze-iron collar (#4a3e3d) with silver spikes (#f0ece1).
+- Silhouette: Stocky demonic canine silhouette, pointed jagged ears, flared mane crest, low predatory stalking posture.
+- Behavior: Prowls along the boundary, snarling; eyes flare with molten glow when detecting the player, charging with savage speed.

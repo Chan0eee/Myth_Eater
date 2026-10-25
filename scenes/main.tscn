@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Texture2D" path="res://assets/art/bg_ares_tile.svg" id="2_bgtile"]
+[ext_resource type="Script" path="res://scripts/spawner.gd" id="3_spawner"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="4_player"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="5_hud"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="BackgroundLayer" type="Node2D" parent="."]
+
+[node name="BgRect1" type="TextureRect" parent="BackgroundLayer"]
+offset_right = 720.0
+offset_bottom = 1280.0
+texture = ExtResource("2_bgtile")
+
+[node name="BgRect2" type="TextureRect" parent="BackgroundLayer"]
+offset_top = -1280.0
+offset_right = 720.0
+offset_bottom = 0.0
+texture = ExtResource("2_bgtile")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Spawner" type="Node2D" parent="."]
+script = ExtResource("3_spawner")
+
+[node name="EntitiesContainer" type="Node2D" parent="Spawner"]
+
+[node name="Player" parent="." instance=ExtResource("4_player")]
+position = Vector2(360, 920)
+
+[node name="FXLayer" type="Node2D" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource("5_hud")]

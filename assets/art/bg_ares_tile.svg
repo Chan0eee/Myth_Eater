@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" width="720" height="1280">
+  <defs>
+    <linearGradient id="aresBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#160829"/>
+      <stop offset="40%" stop-color="#2a081a"/>
+      <stop offset="85%" stop-color="#3d0a0b"/>
+      <stop offset="100%" stop-color="#1d0305"/>
+    </linearGradient>
+    <linearGradient id="lavaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0054" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#ff7b00" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff0054" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="720" height="1280" fill="url(#aresBgGrad)"/>
+
+  <!-- Magma Fissures and Underworld Veins -->
+  <path d="M 0 300 Q 180 340 320 280 T 720 320" stroke="url(#lavaGrad)" stroke-width="18" fill="none"/>
+  <path d="M 0 780 Q 240 720 440 820 T 720 760" stroke="url(#lavaGrad)" stroke-width="24" fill="none"/>
+  <path d="M 0 1120 Q 300 1180 520 1100 T 720 1140" stroke="url(#lavaGrad)" stroke-width="32" fill="none"/>
+
+  <!-- Broken Olympian Columns in Silhouette -->
+  <!-- Left Column -->
+  <rect x="24" y="160" width="44" height="240" fill="#12041c" opacity="0.6"/>
+  <rect x="16" y="150" width="60" height="18" fill="#1b0826" opacity="0.7"/>
+  <polygon points="24,400 46,390 68,400" fill="#12041c" opacity="0.6"/>
+
+  <!-- Right Broken Column -->
+  <rect x="640" y="620" width="48" height="320" fill="#14020a" opacity="0.65"/>
+  <rect x="632" y="608" width="64" height="18" fill="#1f0412" opacity="0.7"/>
+  <polygon points="640,940 664,955 688,940" fill="#14020a" opacity="0.65"/>
+
+  <!-- Floating Embers and Void Flecks -->
+  <circle cx="120" cy="180" r="3.5" fill="#ffb703" opacity="0.8"/>
+  <circle cx="280" cy="120" r="2" fill="#00f5d4" opacity="0.9"/>
+  <circle cx="480" cy="240" r="4" fill="#ff7b00" opacity="0.7"/>
+  <circle cx="620" cy="150" r="2.5" fill="#ffd166" opacity="0.8"/>
+  <circle cx="80" cy="540" r="3" fill="#ff0054" opacity="0.8"/>
+  <circle cx="220" cy="620" r="4.5" fill="#ff7b00" opacity="0.85"/>
+  <circle cx="540" cy="580" r="3" fill="#00f5d4" opacity="0.9"/>
+  <circle cx="380" cy="880" r="5" fill="#ffb703" opacity="0.9"/>
+  <circle cx="160" cy="980" r="3" fill="#ff0054" opacity="0.75"/>
+  <circle cx="600" cy="1040" r="4" fill="#ff7b00" opacity="0.8"/>
+</svg>

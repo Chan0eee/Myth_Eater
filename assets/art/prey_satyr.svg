@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="satyrFace" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffe3d8"/>
+      <stop offset="70%" stop-color="#f8c291"/>
+      <stop offset="100%" stop-color="#e58e26"/>
+    </radialGradient>
+    <linearGradient id="hornGradSatyr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8c5028"/>
+      <stop offset="50%" stop-color="#592c10"/>
+      <stop offset="100%" stop-color="#381b0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Curled Horn Left -->
+  <path d="M 38 42 C 18 36 10 20 22 10 C 34 2 46 16 38 28 Z" fill="url(#hornGradSatyr)" stroke="#2d1500" stroke-width="4.5" stroke-linejoin="round"/>
+  <!-- Curled Horn Right -->
+  <path d="M 82 42 C 102 36 110 20 98 10 C 86 2 74 16 82 28 Z" fill="url(#hornGradSatyr)" stroke="#2d1500" stroke-width="4.5" stroke-linejoin="round"/>
+
+  <!-- Wild Curly Hair Backdrop -->
+  <circle cx="34" cy="46" r="14" fill="#a2673a" stroke="#2d1500" stroke-width="4"/>
+  <circle cx="86" cy="46" r="14" fill="#a2673a" stroke="#2d1500" stroke-width="4"/>
+  <circle cx="60" cy="30" r="16" fill="#a2673a" stroke="#2d1500" stroke-width="4"/>
+
+  <!-- Faun Furry Lower Body -->
+  <ellipse cx="60" cy="88" rx="34" ry="24" fill="#6d4c41" stroke="#2d1500" stroke-width="4.5"/>
+  <!-- Leaf Tunic / Sash -->
+  <path d="M 34 78 Q 60 92 86 78 Q 60 70 34 78 Z" fill="#2a9d8f" stroke="#2d1500" stroke-width="3.5"/>
+
+  <!-- Head / Face -->
+  <circle cx="60" cy="56" r="32" fill="url(#satyrFace)" stroke="#2d1500" stroke-width="4.5"/>
+
+  <!-- Shading -->
+  <path d="M 36 68 C 44 86 76 86 84 68 C 80 88 40 88 36 68 Z" fill="#b06c28" opacity="0.3"/>
+
+  <!-- Glossy Highlight -->
+  <ellipse cx="48" cy="40" rx="9" ry="5" transform="rotate(-25 48 40)" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Eyes -->
+  <ellipse cx="48" cy="54" rx="7" ry="9" fill="#2d1500"/>
+  <circle cx="46" cy="51" r="3" fill="#ffffff"/>
+  <ellipse cx="72" cy="54" rx="7" ry="9" fill="#2d1500"/>
+  <circle cx="70" cy="51" r="3" fill="#ffffff"/>
+
+  <!-- Rosy Cheeks -->
+  <circle cx="40" cy="62" r="5" fill="#ff7675" opacity="0.65"/>
+  <circle cx="80" cy="62" r="5" fill="#ff7675" opacity="0.65"/>
+
+  <!-- Happy Mouth -->
+  <path d="M 52 66 Q 60 74 68 66 Z" fill="#d63031" stroke="#2d1500" stroke-width="3"/>
+
+  <!-- Pan Flute -->
+  <g transform="translate(68, 72) rotate(15)">
+    <rect x="0" y="0" width="5" height="24" fill="#f4a261" stroke="#2d1500" stroke-width="2"/>
+    <rect x="6" y="4" width="5" height="20" fill="#f4a261" stroke="#2d1500" stroke-width="2"/>
+    <rect x="12" y="8" width="5" height="16" fill="#f4a261" stroke="#2d1500" stroke-width="2"/>
+    <rect x="18" y="12" width="5" height="12" fill="#f4a261" stroke="#2d1500" stroke-width="2"/>
+    <line x1="-1" y1="8" x2="24" y2="8" stroke="#e76f51" stroke-width="2.5"/>
+  </g>
+</svg>

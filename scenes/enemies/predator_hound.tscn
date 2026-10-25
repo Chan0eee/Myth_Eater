@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/predator.gd" id="1_predator"]
+[ext_resource type="Texture2D" path="res://assets/art/predator_hound.svg" id="2_hound"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hound"]
+radius = 48.0
+
+[node name="PredatorHound" type="Area2D" groups=["predators"]]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1_predator")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_hound")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hound")
